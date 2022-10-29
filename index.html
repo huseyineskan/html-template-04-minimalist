@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Webpage</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <nav id="nav">
+            <span class="menu-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="logo">
+                <span>Minimalist.</span>
+            </div>
+            <span class="menu-open">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </header>
+        <section>
+            <div class="info">
+                <div class="blur"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quod sunt iusto tenetur similique molestiae est natus sapiente eaque impedit asperiores dignissimos praesentium sit, sint aliquam. Ad dolorum eius sit.</p>
+                <a href="#">Read More</a>
+            </div>
+        </section>
+        <footer>
+            <div class="socials">
+                <ul>
+                    <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-whatsapp"></i></li>
+                </ul>
+            </div>
+            <span><a href="#">Heskan Web Design</a></span>
+        </footer>
+    </div>
+
+    <script>
+        const menuOpen = document.querySelector('.menu-open');
+        const menuClose = document.querySelector('.menu-close');
+        const nav = document.querySelector('#nav');
+
+        menuOpen.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+
+        function openMenu(){
+            nav.style.right = 0;
+            nav.style.left = 0;
+            nav.style.left = 0;
+            nav.style.opacity = 1;
+        }
+
+        function closeMenu(){
+            nav.style.left = "100%";
+            nav.style.opacity = 0.5;
+        }
+
+
+    </script>
+
+</body>
+</html>

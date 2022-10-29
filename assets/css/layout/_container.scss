@@ -1,0 +1,30 @@
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 10px;
+
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+@media screen and (min-width: 1080px){
+
+    body{
+        @include align();
+        height: 100vh;
+        background-color: #2c2c2c;
+    }
+
+    .container{
+        background-color: $light-color;
+        width: 1080px;
+        max-width: 1080px;
+        max-height: 700px;
+        background-position: center bottom;
+        background-size: 750px;
+        box-shadow: 0 10px 30px rgba(#000, 1);
+    }
+}

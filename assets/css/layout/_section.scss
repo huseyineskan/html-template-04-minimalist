@@ -1,0 +1,42 @@
+section{
+    margin-top: 360px;
+
+    .info{
+        overflow: hidden;
+        background-color: rgba($light-color, 0.7);
+        padding: 10px;
+        box-shadow: 0 10px 15px rgba($dark-color, 0.3);
+
+        p{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: 500;
+        }
+
+        a{
+            display: inline-block;
+            margin-top: 6px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            border-bottom: 3px solid $detail-color;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px){
+    section{
+        margin-top: 400px;
+
+        .info{
+            width: 500px;
+            max-width: 500px;
+
+            p{
+                -webkit-line-clamp: 5;
+            }
+        }
+    }
+}

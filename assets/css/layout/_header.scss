@@ -1,0 +1,40 @@
+header{
+
+    @include align(space-between);
+    padding: 15px 0;
+    // position: relative;
+    overflow: hidden;
+
+    .logo span{
+        font-size: 2rem;
+        font-weight: bold;
+    }  
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: $detail-color;
+    z-index: 3;
+    transition: 300ms;
+    opacity: 0.5;
+    text-align: end;
+
+    .menu-close{
+        display: inline-block;
+        padding: 30px 15px 15px;
+    }
+
+    ul{
+        margin-top: 10rem;
+
+        a{  
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
